@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Abhinav Namboori</title>
+<meta name="description" content="Abhinav Namboori is seventeen. He writes software for robots and the servers behind them, and is writing a novel called Hêrte.">
+<meta name="theme-color" content="#FAFAF7">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abhinav Namboori">
+<meta property="og:description" content="Seventeen. Software for robots and the servers behind them, and a novel called Hêrte.">
+<meta property="og:url" content="https://deusalter.github.io/">
+<meta property="og:image" content="https://deusalter.github.io/assets/og.jpg">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="420">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://deusalter.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23FAFAF7'/%3E%3Cpath d='M8 50C24 45 40 55 57 48' stroke='%23E4FF3C' stroke-width='11' fill='none'/%3E%3Ctext x='32' y='47' font-family='Georgia,serif' font-size='46' text-anchor='middle' fill='%23111'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=12">
+</head>
+<body>
+<main id="top">
+  <svg class="spine" aria-hidden="true"><path/></svg>
+
+  <section class="hero">
+    <header class="top">
+      <a href="#top">Abhinav Namboori</a>
+      <nav>
+        <a href="#robots">Robots</a>
+        <a href="#servers">Servers</a>
+        <a href="#projects">Projects</a>
+        <a href="#herte">Hêrte</a>
+        <a href="#listening">Listening</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <canvas class="trail"></canvas>
+    <div class="hero-copy">
+      <h1>Abhinav<br><span class="u">Namboori</span></h1>
+      <p class="lede">I'm seventeen. I write software for robots and for the servers behind them, and I'm writing a novel I expect to take decades.</p>
+      <p class="cred">Telerobotics at NVIDIA, summer 2026. Server automation at Rivos, now part of Meta, summer 2025.</p>
+    </div>
+    <svg class="arm" aria-hidden="true"></svg>
+    <p class="hint">It follows your cursor.</p>
+  </section>
+
+  <!-- ROBOTS -->
+  <section class="sec" id="robots">
+    <h2>Robots</h2>
+    <div class="body">
+      <p class="when">NVIDIA, telerobotics, summer 2026</p>
+      <p>I trained a humanoid robot by moving. It mirrored me through motion tracking, and every movement became data to teach it to act on its own. Everything it did, one of us had done first.</p>
+      <p>Someday I will build one that no longer needs anyone to move first.</p>
+    </div>
+    <div class="fig rig">
+      <svg viewBox="0 0 1000 400" role="img" aria-label="Two figures. The one on the left is you and follows your pointer with its hands. The humanoid robot on the right copies it a quarter second later and records the movement."></svg>
+      <div class="rig-bar">
+        <button class="btn" type="button" id="rig-toggle" aria-pressed="false">Let it try alone</button>
+        <span class="cap" id="rig-status" aria-live="polite">Move inside the drawing. The figure on the left is you.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVERS -->
+  <section class="sec" id="servers">
+    <h2>Servers</h2>
+    <div class="body">
+      <p class="when">Rivos, summer 2025</p>
+      <p>Rivos designs RISC-V chips and is now part of Meta. I looked after 200 of their servers and wrote the automation that checks each one's health, so a person no longer has to.</p>
+    </div>
+    <div class="fig">
+      <div class="fleet" aria-hidden="true"></div>
+      <div class="fleet-bar">
+        <button class="btn" type="button" id="fleet-break">Take one down</button>
+        <span class="fleet-status" id="fleet-status" aria-live="polite">200 of 200 answering.</span>
+        <span class="cap">One dot per server. Click any of them.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="sec" id="projects">
+    <h2>Things I made</h2>
+    <div class="body">
+      <p>Three things I built because I wanted them to exist.</p>
+    </div>
+
+    <article class="proj">
+      <div class="shots pair">
+        <figure class="print" style="--tilt:-1.3deg"><img src="assets/studytown-park.jpg" width="1400" height="787" loading="lazy" alt="Studytown's park at dusk. Round little characters in sweaters stand around a lit fountain, with a library behind them."></figure>
+        <figure class="print over"><img src="assets/studytown-library.jpg" width="1400" height="787" loading="lazy" alt="Inside Studytown's library, with long reading tables, green lamps and two floors of bookshelves."></figure>
+      </div>
+      <div>
+        <h3>Studytown</h3>
+        <p>A small town at dusk, in the browser, where friends study together. People near you can hear you, and voices get louder as you walk closer. Put on your headphones and the town goes quiet.</p>
+        <p>It has no image or audio files. The city, the characters, the music and the weather are all generated in code.</p>
+      </div>
+    </article>
+
+    <article class="proj flip">
+      <div class="shots phone">
+        <figure class="print"><img src="assets/hyperfocus-race.jpg" width="690" height="1500" loading="lazy" alt="Hyperfocus on an iPhone. A small runner races along a track against markers for earlier days, above a short task list."></figure>
+      </div>
+      <div>
+        <h3>Hyperfocus</h3>
+        <p>A task app for iPhone, made for ADHD brains. It has one goal, to take the friction out of starting. I made it for people who stall where I stall.</p>
+        <p>You race your own recent days, and the target is a typical day, so you pass a few of them almost every time. A missed day breaks nothing.</p>
+        <p><a href="https://github.com/deusalter/hyperfocus">The code is on GitHub</a></p>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="shots">
+        <figure class="print" style="--tilt:.9deg"><img src="assets/stillleaf-today.jpg" width="1400" height="670" loading="lazy" alt="Stillleaf's Today screen on a Mac. A card shows the book being read and pages left to the daily goal, over a garden drawn in small text characters."></figure>
+      </div>
+      <div>
+        <h3>Stillleaf</h3>
+        <p>A reading app for the Mac. It keeps track of what you read, and a garden made of small characters grows across the window as you get closer to the day's goal.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- THE NOVEL -->
+  <section class="sec herte" id="herte">
+    <h2 class="herte-title">Hêrte<svg viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M-10 118 C 240 86, 520 142, 1010 96"/></svg></h2>
+    <p class="herte-kind">A philosophical fantasy epic in five acts and an encore. I have been building it since March 2025, and I expect it to take decades.</p>
+
+    <div class="herte-grid">
+      <div class="spiral" aria-hidden="true">
+        <svg viewBox="0 0 600 600"><path class="turn"/><circle class="glow" r="16"/><circle class="tip" r="4"/></svg>
+        <p class="cap">Sattāvarta, the Spiral of Being.</p>
+      </div>
+      <div class="body">
+        <blockquote>Why go on when there is no reason to?</blockquote>
+        <p>A creator god named Ishar'el demands that existence justify itself. He is tragic, and he is right to ask. Four people answer him, and the book argues all four answers at full strength.</p>
+        <ul class="answers">
+          <li><b>Kavi</b><div><p class="line"><q>We are alive, and thus we go on.</q></p><p class="stance">The narrator. Acceptance without surrender.</p></div></li>
+          <li><b>Ariṣṭa</b><div><p class="line"><q>I will hold you. Where you go, I will go; where you stay, I will stay.</q></p><p class="stance">Love as sustenance.</p></div></li>
+          <li><b>Levitas</b><div><p class="line"><q>This is what it costs to make a god hesitate before a flower.</q></p><p class="stance">Escape through lightness.</p></div></li>
+          <li><b>Verith'el</b><div><p class="line"><q>You will not give them a reason. I will.</q></p><p class="stance">His answer is the title of the book.</p></div></li>
+        </ul>
+        <p class="spoken">In this world reality is a sentence that is still being spoken. The cosmos is a grammar called the Spiral of Being, grown from a tree named the Ashvattha, and power means reading deeper into the language everything is made of.</p>
+        <p>The book presents itself as a scripture, translated thousands of years after its events. Its history exists twice in my notes, once as it happened and once as later civilizations misremember it. The story bible is more than three hundred files. Most of them will never appear in the book, and the story stands on them anyway.</p>
+        <div class="shelf" aria-hidden="true"></div>
+        <p class="cap">Fifteen books planned, about three million words. Nobody assigned any of it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LISTENING -->
+  <section class="sec flood" id="listening">
+    <h2>Listening</h2>
+    <div class="body">
+      <p>Mostly shoegaze, post-rock and metal, a lot of it Korean and Japanese and made in bedrooms in the last few years. I listen to whole albums, start to finish, loud.</p>
+      <p>These are the five kinds I keep going back to, and the albums I'd hand you first from each.</p>
+    </div>
+    <!-- Source: RYM export, Nov 2026. Every album here is rated 9 or 10. The genre sorting is by hand. -->
+    <ul class="genres">
+      <li class="genre">
+        <h3>Shoegaze</h3>
+        <div>
+          <ul class="deck" style="--n:4">
+            <li class="sel"><button class="sleeve" type="button" aria-pressed="true" data-title="Nebulous You" data-artist="Della Zyr"><img src="assets/covers/nebulous-you.jpg" width="640" height="640" loading="lazy" alt="Nebulous You, Della Zyr"></button></li>
+            <li><button class="sleeve" type="button" aria-pressed="false" data-title="After the Night" data-artist="Parannoul"><img src="assets/covers/after-the-night.jpg" width="640" height="640" loading="lazy" alt="After the Night, Parannoul"></button></li>
+            <li><button class="sleeve" type="button" aria-pressed="false" data-title="Vitamins and Apprehension" data-artist="Della Zyr"><img src="assets/covers/vitamins.jpg" width="640" height="640" loading="lazy" alt="Vitamins and Apprehension, Della Zyr"></button></li>
+            <li><button class="sleeve" type="button" aria-pressed="false" data-title="To See the Next Part of the Dream" data-artist="Parannoul"><img src="assets/covers/next-part-of-the-dream.jpg" width="640" height="640" loading="lazy" alt="To See the Next Part of the Dream, Parannoul"></button></li>
+          </ul>
+          <p class="now" aria-live="polite"><span class="now-t">Nebulous You</span><span class="now-a">Della Zyr</span></p>
+        </div>
+      </li>
+      <li class="genre">
+        <h3>Post-rock</h3>
+        <div>
+          <ul class="deck" style="--n:4">
+            <li class="sel"><button class="sleeve" type="button" aria-pressed="true" data-title="Lift Your Skinny Fists Like Antennas to Heaven" data-artist="Godspeed You! Black Emperor"><img src="assets/covers/skinny-fists.jpg" width="640" height="640" loading="lazy" alt="Lift Your Skinny Fists Like Antennas to Heaven, Godspeed You! Black Emperor"></button></li>
+            <li><button class="sleeve" type="button" aria-pressed="false" data-title="Ágætis byrjun" data-artist="Sigur Rós"><img src="assets/covers/agaetis-byrjun.jpg" width="640" height="640" loading="lazy" alt="Ágætis byrjun, Sigur Rós"></button></li>
+            <li><button class="sleeve" type="button" aria-pressed="false" data-title="Enjoy Eternal Bliss" data-artist="Yndi Halda"><img src="assets/covers/enjoy-eternal-bliss.jpg" width="640" height="640" loading="lazy" alt="Enjoy Eternal Bliss, Yndi Halda"></button></li>
+            <li><button class="sleeve" type="button" aria-pressed="false" data-title="Departure Songs" data-artist="We Lost the Sea"><img src="assets/covers/departure-songs.jpg" width="640" height="640" loading="lazy" alt="Departure Songs, We Lost the Sea"></button></li>
+          </ul>
+          <p class="now" aria-live="polite"><span class="now-t">Lift Your Skinny Fists Like Antennas to Heaven</span><span class="now-a">Godspeed You! Black Emperor</span></p>
+        </div>
+      </li>
+      <li class="genre">
+        <h3>Noise and drone</h3>
+        <div>
+          <ul class="deck" style="--n:4">
+            <li class="sel"><button class="sleeve" type="button" aria-pressed="true" data-title="Rock Dream" data-artist="Boris with Merzbow"><img src="assets/covers/rock-dream.jpg" width="640" height="640" loading="lazy" alt="Rock Dream, Boris with Merzbow"></button></li>
+            <li><button class="sleeve" type="button" aria-pressed="false" data-title="&#39;77 Live" data-artist="Les Rallizes Dénudés"><img src="assets/covers/77-live.jpg" width="640" height="640" loading="lazy" alt="&#39;77 Live, Les Rallizes Dénudés"></button></li>
+            <li><button class="sleeve" type="button" aria-pressed="false" data-title="Boris at Last -Feedbacker-" data-artist="Boris"><img src="assets/covers/feedbacker.jpg" width="640" height="640" loading="lazy" alt="Boris at Last -Feedbacker-, Boris"></button></li>
+            <li><button class="sleeve" type="button" aria-pressed="false" data-title="The Dance of the Moon and the Sun" data-artist="Natural Snow Buildings"><img src="assets/covers/dance-of-the-moon.jpg" width="640" height="640" loading="lazy" alt="The Dance of the Moon and the Sun, Natural Snow Buildings"></button></li>
+          </ul>
+          <p class="now" aria-live="polite"><span class="now-t">Rock Dream</span><span class="now-a">Boris with Merzbow</span></p>
+        </div>
+      </li>
+      <li class="genre">
+        <h3>Metal</h3>
+        <div>
+          <ul class="deck" style="--n:4">
+            <li class="sel"><button class="sleeve" type="button" aria-pressed="true" data-title="Symbolic" data-artist="Death"><img src="assets/covers/symbolic.jpg" width="640" height="640" loading="lazy" alt="Symbolic, Death"></button></li>
+            <li><button class="sleeve" type="button" aria-pressed="false" data-title="Still Life" data-artist="Opeth"><img src="assets/covers/still-life.jpg" width="640" height="640" loading="lazy" alt="Still Life, Opeth"></button></li>
+            <li><button class="sleeve" type="button" aria-pressed="false" data-title="From Mars to Sirius" data-artist="Gojira"><img src="assets/covers/from-mars-to-sirius.jpg" width="640" height="640" loading="lazy" alt="From Mars to Sirius, Gojira"></button></li>
+            <li><button class="sleeve" type="button" aria-pressed="false" data-title="Lonely People With Power" data-artist="Deafheaven"><img src="assets/covers/lonely-people-with-power.jpg" width="640" height="640" loading="lazy" alt="Lonely People With Power, Deafheaven"></button></li>
+          </ul>
+          <p class="now" aria-live="polite"><span class="now-t">Symbolic</span><span class="now-a">Death</span></p>
+        </div>
+      </li>
+      <li class="genre">
+        <h3>Vaporwave and electronic</h3>
+        <div>
+          <ul class="deck" style="--n:4">
+            <li class="sel"><button class="sleeve" type="button" aria-pressed="true" data-title="星間性交" data-artist="t e l e p a t h" data-lang="ja" data-artist-ja="テレパシー能力者"><img src="assets/covers/seikan-seikou.jpg" width="640" height="640" loading="lazy" alt="星間性交, t e l e p a t h テレパシー能力者"></button></li>
+            <li><button class="sleeve" type="button" aria-pressed="false" data-title="時が我らを隔てる唯一のものであるならば、隔てるものなど何もない" data-artist="t e l e p a t h" data-lang="ja" data-artist-ja="テレパシー能力者"><img src="assets/covers/toki-ga.jpg" width="640" height="640" loading="lazy" alt="時が我らを隔てる唯一のものであるならば、隔てるものなど何もない, t e l e p a t h テレパシー能力者"></button></li>
+            <li><button class="sleeve" type="button" aria-pressed="false" data-title="We Had Good Times Together, Don&#39;t Forget That" data-artist="Sewerslvt"><img src="assets/covers/good-times-together.jpg" width="640" height="640" loading="lazy" alt="We Had Good Times Together, Don&#39;t Forget That, Sewerslvt"></button></li>
+            <li><button class="sleeve" type="button" aria-pressed="false" data-title="Revengeseekerz" data-artist="Jane Remover"><img src="assets/covers/revengeseekerz.jpg" width="640" height="640" loading="lazy" alt="Revengeseekerz, Jane Remover"></button></li>
+          </ul>
+          <p class="now" aria-live="polite"><span class="now-t" lang="ja">星間性交</span><span class="now-a">t e l e p a t h <span lang="ja">テレパシー能力者</span></span></p>
+        </div>
+      </li>
+    </ul>
+    <p class="deck-foot"><a href="https://rateyourmusic.com/~deusalter">Everything I've rated is on Rate Your Music</a></p>
+  </section>
+
+  <!-- TEACHING -->
+  <section class="sec" id="teaching">
+    <h2>Teaching</h2>
+    <div class="body">
+      <p class="when">Inclusive World, three years</p>
+      <p>I teach Python one on one to kids and adults with special needs, in person and over Zoom. Before that I spent two summers volunteering at The Tech Interactive.</p>
+    </div>
+    <div class="teach-shots">
+      <a class="print" style="--tilt:-1.4deg" href="https://www.inclusiveworld.org/programs/skills-development"><img src="assets/inclusive-world-python.jpg" width="798" height="655" loading="lazy" alt="The Python Programming class as listed on Inclusive World's site. No prerequisite, 22 to 24 weeks."></a>
+      <a class="print" style="--tilt:1.6deg" href="https://www.inclusiveworld.org/"><img src="assets/inclusive-world-logo.png" width="1000" height="318" loading="lazy" alt="Inclusive World's logo, with the line Where Abilities Lead the Way."></a>
+    </div>
+    <p class="cap teach-cap">The class I teach, as Inclusive World lists it.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="sec contact" id="contact">
+    <h2>Write to me</h2>
+    <div class="body">
+      <a class="mail" href="mailto:abhinavnamboori@gmail.com">abhinavnamboori@gmail.com</a>
+      <div class="links">
+        <!-- TODO: real LinkedIn profile URL -->
+        <a href="https://www.linkedin.com/" data-todo="linkedin">LinkedIn, Abhinav Namboori</a>
+        <a href="https://github.com/deusalter">GitHub, deusalter</a>
+        <a href="https://rateyourmusic.com/~deusalter">Rate Your Music</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="main.js?v=14"></script>
+</body>
+</html>
